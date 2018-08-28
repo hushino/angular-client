@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../data.service';
 @Component({
   selector: 'app-anime',
   templateUrl: './anime.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimeComponent implements OnInit {
 
-  constructor() { }
+  animes = []
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getAll().subscribe(data => {
+      this.animes = data
+    })
   }
 
 }
