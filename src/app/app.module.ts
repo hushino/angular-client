@@ -4,14 +4,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AnimeComponent } from './anime/anime.component';
 import { HomeComponent } from './home/home.component';
+import { RouterModule, Routes } from '@angular/router';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'anime/:id', component: AnimeComponent },
+  { path: '**', component: PagenotfoundComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimeComponent,
-    HomeComponent
+    HomeComponent,
+    PagenotfoundComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+     // { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     HttpClientModule
   ],

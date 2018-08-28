@@ -4,5 +4,10 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<app-home></app-home>
-<app-anime></app-anime>
+<nav>
+  <a routerLink="/" routerLinkActive="active">home</a>
+  <div></div>
+  <a routerLink="/anime/1" routerLinkActive="active">anime1</a>
+</nav>
+<h1></h1>
+<router-outlet></router-outlet>
