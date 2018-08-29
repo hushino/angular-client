@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService, Anime } from 'src/app/data.service';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-anime-by-id',
