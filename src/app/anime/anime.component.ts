@@ -9,9 +9,8 @@ import { switchMap } from 'rxjs/operators';
 })
 export class AnimeComponent implements OnInit {
  
- public AnimeList2 = [];
+  AnimeList2 = [];
   animes = []
-  private selectedId: number;
 
   constructor(private dataService: DataService, private activeroute: ActivatedRoute,
     private router: Router) { }
@@ -23,9 +22,9 @@ export class AnimeComponent implements OnInit {
 
   }
   onShowAnime(id: number) {
-    this.dataService.getAnimeById(id).subscribe(data => {
-      this.AnimeList2 = data;
-      console.log(data)
+    this.dataService.getAnimeById(id).subscribe(datas => {
+      this.AnimeList2 = datas;
+     // console.log(data)
     })
     this.router.navigate(['/animes', id])
   }
