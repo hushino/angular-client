@@ -1,0 +1,10 @@
+<p>
+  anime-by-id works!
+</p>
+<div *ngFor="let id of ids ">
+  {{id.title}}
+</div>
+<div *ngIf="anime | async as animes">
+  <h3>"{{ animes.id }}"</h3>
+  <h3>"{{ animes.title }}"</h3>
+  <div>

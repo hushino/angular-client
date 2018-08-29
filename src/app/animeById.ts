@@ -1,4 +1,4 @@
-export interface anime{
+export interface animeById{
     'title': string;
     'id': number;
 }

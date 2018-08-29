@@ -6,10 +6,12 @@ import { AnimeComponent } from './anime/anime.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AnimeByIdComponent } from './anime-by-id/anime-by-id.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'anime/:id', component: AnimeComponent },
+  { path: 'animes', component: AnimeComponent },
+  { path: 'animes/:id', component: AnimeByIdComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
@@ -18,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     AnimeComponent,
     HomeComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AnimeByIdComponent
   ],
   imports: [
     RouterModule.forRoot(
