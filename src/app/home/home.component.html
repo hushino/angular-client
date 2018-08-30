@@ -1,3 +1,13 @@
-<div *ngFor="let home of homes">
-  {{home.title}}
+<div class="capreciente">
+   CAPÍTULOS RECIENTES 
+</div>
+
+<div class="elemento">
+<div class="caps" *ngFor="let home of homes">
+
+<img (click)="onShowEpisode(home.parentID,home.id)" class="episodeimage" src="{{home.imageCap}}" alt="Italian Trulli">
+ 
+<h4 class="h4"> {{home.title}}</h4>
+   
+</div>
 </div>

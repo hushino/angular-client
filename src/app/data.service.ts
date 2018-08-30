@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { anime } from './anime';
 import { home } from './home';
 import { animeById } from './animeById';
+import { episodeById } from './episodeById';
 export class Anime {
   constructor() { }
 }
@@ -25,4 +26,13 @@ export class DataService {
   getHome(): Observable<home[]> {
     return this.http.get<home[]>('http://localhost:8080/v1/')
   }
+  
+  //--------episodes----------
+  getEpisodeById(id: | string): Observable<episodeById[]>{
+    return this.http.get<episodeById[]>('http://localhost:8080/'+id)
+  }
+  getUniqueEpisode(animeId: number, episodeId: number): Observable<episodeById[]> {
+    return this.http.get<episodeById[]>('http://localhost:8080/' + animeId + '/' + episodeId)
+  }
+ 
 }

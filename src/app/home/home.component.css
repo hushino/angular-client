@@ -1,0 +1,50 @@
+.capreciente {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0a0909b5;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: "Open Sans",sans-serif;
+  border-bottom: 1px solid rgba(11, 12, 14, .2);
+}
+.caps {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  max-width: 16.667%;
+}
+.episodeimage {
+  max-width: 200px;
+}
+/* 
+.h4 {
+  color: black;
+  text-align: center;
+}
+.image {
+  max-width: 14em;
+  max-height: 10em;
+}
+
+.container {
+  width: 90%;
+  height: 600px;
+  margin: auto;
+ 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.item {
+  color: aliceblue;
+  flex: none;
+  width: calc((100% - 40px) / 5);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+ */

@@ -7,11 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AnimeByIdComponent } from './anime-by-id/anime-by-id.component';
+import { EpisodeByIdComponent } from './episode-by-id/episode-by-id.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'animes', component: AnimeComponent },
   { path: 'animes/:id', component: AnimeByIdComponent },
+  { path: ':id/:id2', component: EpisodeByIdComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     AnimeComponent,
     HomeComponent,
     PagenotfoundComponent,
-    AnimeByIdComponent
+    AnimeByIdComponent,
+    EpisodeByIdComponent
   ],
   imports: [
     RouterModule.forRoot(

@@ -9,7 +9,8 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class AnimeByIdComponent implements OnInit {
 
   ids = []
-
+  episodeId = []
+  
   constructor(
     private dataService: DataService,
     private route: ActivatedRoute
@@ -17,13 +18,16 @@ export class AnimeByIdComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      // console.log(params) //log the entire params object
-      // console.log(params['id']) //log the value of id
       this.dataService.getAnimeById(params['id']).subscribe(data => {
         this.ids = data
       })
+    })
+    this.route.params.subscribe(params => {
+      this.dataService.getEpisodeById(params['id']).subscribe(data => {
+        this.episodeId = data
+      })
     });
-
+    
   }
 
 }

@@ -1,8 +1,6 @@
-<p>
-  anime works!
-</p>
-
-<div *ngFor="let anime of animes ">
-<button (click)="onShowAnime(anime.id)">Ver</button>
+<div class="elemento">
+<div class="sada1" *ngFor="let anime of animes ">
+<img (click)="onShowAnime(anime.id)" class="animeImage" src="{{anime.backgroundimage}}" alt="Italian Trulli">
   <h3>{{anime.title}}</h3>
+</div>
 </div>
