@@ -40,7 +40,7 @@ export class EpisodeByIdComponent implements OnInit {
     await this.loadScript('https://content.jwplatform.com/libraries/bfIbW5Pe.js');
     setTimeout(() => {
         this.loadJwplayer();
-    }, 900);
+    }, 600);
   }
 
   private loadScript(scriptUrl: string) {

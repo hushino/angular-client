@@ -10,6 +10,7 @@ export class AnimeByIdComponent implements OnInit {
 
   ids = [];
   episodeId = [];
+  tags = [];
 
   constructor(
     private dataService: DataService,
@@ -25,6 +26,12 @@ export class AnimeByIdComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.dataService.getEpisodeById(params['id']).subscribe(data => {
         this.episodeId = data;
+      });
+    });
+    this.route.params.subscribe(params => {
+      this.dataService.getTagsOfAnime(params['id']).subscribe(data => {
+        this.tags = data;
+        console.log(data);
       });
     });
 
