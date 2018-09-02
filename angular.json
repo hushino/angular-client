@@ -8,15 +8,11 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-<<<<<<< HEAD
-      "schematics": {},
-=======
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
         }
       },
->>>>>>> initial commit
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -31,11 +27,7 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
-              "src/styles.css"
-=======
               "src/styles.scss"
->>>>>>> initial commit
             ],
             "scripts": []
           },
