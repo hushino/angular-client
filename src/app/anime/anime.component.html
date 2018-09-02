@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 <div class="elemento">
 <div class="sada1" *ngFor="let anime of animes ">
 <img (click)="onShowAnime(anime.id)" class="animeImage" src="{{anime.backgroundimage}}" alt="Italian Trulli">
   <h3>{{anime.title}}</h3>
 </div>
 </div>
+=======
+<div class="container">
+  <div class="row">
+<div class="col col-lg-3" *ngFor="let anime of animes ">
+      <img (click)="onShowAnime(anime.id)" class="rounded" src="{{anime.backgroundimage}}" alt="Italian Trulli">
+      <h5 class="font">{{anime.title}}</h5>
+    </div>
+  </div>
+</div>
+>>>>>>> initial commit

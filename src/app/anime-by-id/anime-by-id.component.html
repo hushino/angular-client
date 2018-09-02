@@ -1,6 +1,44 @@
 <div *ngFor="let id of ids ">
+<<<<<<< HEAD
   {{id.title}}
 </div>
 <div *ngFor="let episodeIds of episodeId">
   {{episodeIds.title}}
+=======
+  <div>
+    <table style="width:30%" class="left">
+      <tr>
+        <td>
+          <h1>Nombre del anime: </h1>
+        </td>
+        <td>
+          <h2> {{id.title}} </h2>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <h1>Fecha de Emision: </h1>
+        </td>
+        <td>
+          <h1>{{id.fechadeEmision}} </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>Estado: </h1>
+        </td>
+        <td>
+          <h1>{{id.state}} </h1>
+        </td>
+      </tr>
+    </table>
+  </div>
+<img class="animeImage" src="{{id.backgroundimage}}" alt="Italian Trulli">  
+</div>
+
+<div class="episodes" *ngFor="let episodeIds of episodeId">
+<h5>Episodio {{episodeIds.episode}}</h5>
+<img class="episodeimage" src="{{episodeIds.imageCap}}" alt="Italian Trulli">
+>>>>>>> initial commit
 </div>

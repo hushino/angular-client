@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="capreciente">
    CAPÍTULOS RECIENTES 
 </div>
@@ -10,4 +11,19 @@
 <h4 class="h4"> {{home.title}}</h4>
    
 </div>
+=======
+<div class="container">
+  <div class="row">
+    <div class="col-3 mx-auto">
+      <h4 class="capitulosrecientes">CAPÍTULOS RECIENTES</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" *ngFor="let home of homes">
+      <img (click)="onShowEpisode(home.parentID,home.id)" class="rounded" src="{{home.imageCap}}" alt="Italian Trulli">
+      <h6 class="font"> {{home.title}}</h6>
+    </div>
+  </div>
+>>>>>>> initial commit
 </div>
