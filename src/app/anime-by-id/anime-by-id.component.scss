@@ -1,0 +1,46 @@
+.animeImage {
+  max-width: 270px;
+  height: auto;
+  // min-height: 445px;
+}
+
+@media (min-width: 1200px) {
+  .animeImage {
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.title {
+  font-size: 18px;
+  padding-left: 270px;
+  position: absolute;
+  display: inline-block;
+  padding-top: 290px;
+}
+
+.Ficha {
+  position: relative;
+  padding: 20px 0;
+  margin: -20px 0 20px;
+}
+
+@media (min-width: 467px) {
+  .fchlt {
+    text-align: left;
+  }
+}
+
+.fchlt {
+  padding-top: 0;
+}
+
+.frontimage {
+  max-height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+}

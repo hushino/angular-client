@@ -18,6 +18,7 @@ export class AnimeByIdComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
     this.route.params.subscribe(params => {
       this.dataService.getAnimeById(params['id']).subscribe(data => {
         this.ids = data;
