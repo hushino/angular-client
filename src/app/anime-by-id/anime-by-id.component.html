@@ -1,24 +1,46 @@
-<div *ngFor="let id of ids ">
+<div *ngFor="let id of ids">
   <div class="Ficha fchlt">
     <img class="frontimage img-fluid rounded" src="{{id.frontimage}}" alt="{{id.title}}">
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3">
+      <div class="media">
         <figure class="figure">
-          <img class="animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">
+          <img class="align-self-end mr-3 animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">
         </figure>
-      </div>
-      <div class="col-md-8">
-        <h2 class="title"> {{id.title}} </h2>
+        <div class="media-body">
+          <h5 class="mt-0">
+            <h2 class="titlde"> {{id.title}} </h2>
+          </h5>
+          <p> {{id.synopsis | slice:0:180}}... </p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class="episodes" *ngFor="let tag of tags">
+  <h5>{{tag.gender}}</h5>
+</div>
+
+<!-- <div class="col-md-3">
+        <figure class="figure">
+          <img class="animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">
+        </figure>
+      </div>
+      <div class="col-4">
+        <h2 class="title"> {{id.title}} </h2>
+      </div>
+      <div class="col-5">
+        <h2 class="title"> {{id.synopsis | slice:0:180}} </h2>
+      </div> -->
 
 
-<div class="episodes" *ngFor="let episodeIds of episodeId">
+
+
+
+<!-- <div class="episodes" *ngFor="let episodeIds of episodeId">
   <h5>Episodio {{episodeIds.episode}}</h5>
   <img class="episodeimage" src="{{episodeIds.imageCap}}" alt="Italian Trulli">
 </div>
+ -->

@@ -1,6 +1,7 @@
 .animeImage {
-  max-width: 270px;
+  max-width: 280px;
   height: auto;
+  margin-left: 40px;
   // min-height: 445px;
 }
 
@@ -43,4 +44,8 @@
   top: 0;
   width: 100%;
   background-size: cover;
+}
+
+.media-body{
+  padding-top: 260px;
 }
