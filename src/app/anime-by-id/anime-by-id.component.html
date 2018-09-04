@@ -17,33 +17,11 @@
           <div *ngFor="let tag of id.tags">
             {{tag.gender}}
           </div>
+          <div *ngFor="let episode of id.episode">
+            <img class="img-fluid rounded" src="{{episode.imageCap}}" alt="{{id.title}}">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- <div class="episodes" *ngFor="let tag of tags">
-  <h5>{{tag.gender}}</h5>
-</div>
- -->
-<!-- <div class="col-md-3">
-        <figure class="figure">
-          <img class="animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">
-        </figure>
-      </div>
-      <div class="col-4">
-        <h2 class="title"> {{id.title}} </h2>
-      </div>
-      <div class="col-5">
-        <h2 class="title"> {{id.synopsis | slice:0:180}} </h2>
-      </div> -->
-
-
-
-
-
-<!-- <div class="episodes" *ngFor="let episodeIds of episodeId">
-  <h5>Episodio {{episodeIds.episode}}</h5>
-  <img class="episodeimage" src="{{episodeIds.imageCap}}" alt="Italian Trulli">
-</div>
- -->
