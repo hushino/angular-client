@@ -14,15 +14,18 @@
             <h2 class="titlde"> {{id.title}} </h2>
           </h5>
           <p> {{id.synopsis | slice:0:180}}... </p>
+          <div *ngFor="let tag of id.tags">
+            {{tag.gender}}
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="episodes" *ngFor="let tag of tags">
+<!-- <div class="episodes" *ngFor="let tag of tags">
   <h5>{{tag.gender}}</h5>
 </div>
-
+ -->
 <!-- <div class="col-md-3">
         <figure class="figure">
           <img class="animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">

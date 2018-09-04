@@ -24,7 +24,7 @@ export class AnimeByIdComponent implements OnInit {
         this.ids = data;
       });
     });
-    this.route.params.subscribe(params => {
+    /* this.route.params.subscribe(params => {
       this.dataService.getEpisodeById(params['id']).subscribe(data => {
         this.episodeId = data;
       });
@@ -34,7 +34,7 @@ export class AnimeByIdComponent implements OnInit {
         this.tags = data;
         console.log(data);
       });
-    });
+    }); */
 
   }
 
