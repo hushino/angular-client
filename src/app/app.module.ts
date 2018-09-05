@@ -9,7 +9,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AnimeByIdComponent } from './anime-by-id/anime-by-id.component';
 import { EpisodeByIdComponent } from './episode-by-id/episode-by-id.component';
 import { GenreByIdComponent } from './genre-by-id/genre-by-id.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -36,8 +35,7 @@ const appRoutes: Routes = [
      // { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
