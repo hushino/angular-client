@@ -1,8 +1,8 @@
-<div class="container">
-  <div class="row">
-<div class="col col-lg-3" *ngFor="let anime of animes ">
+<div class="contenedor">
+  <div class="elemento">
+    <div class="sada1" *ngFor="let anime of animes ">
       <img (click)="onShowAnime(anime.id)" class="rounded" src="{{anime.backgroundimage}}" alt="Italian Trulli">
-      <h5 class="font">{{anime.title}}</h5>
+      <h5 class="font" id="app">{{anime.title}}</h5>
     </div>
   </div>
 </div>
