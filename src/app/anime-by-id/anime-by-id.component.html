@@ -8,7 +8,7 @@
 
       <img class="align-self-start mr-3 animeImage img-fluid rounded" src="{{id.backgroundimage}}" alt="{{id.title}}">
 
-      <h2 id="app" class="titlde"> {{id.title}} </h2>
+      <h2 class="titlde"> {{id.title}} </h2>
       <p id="app"> {{id.synopsis | slice:0:180}}... </p>
       <div class="col tags">
         <ul id="app" *ngFor="let tag of id.tags"> {{tag.gender}}</ul>
@@ -17,16 +17,10 @@
       <section class="section">
         <ul *ngFor="let episode of id.episode">
           <li class="far fa-play-circle">
-            <div class="media">
-              <figure class="epi  ">
                 <!-- <i class="far fa-play-circle"></i> -->
                 <img class="img-fluid rounded" src="{{episode.imageCap}}" alt="{{id.title}}">
-              </figure>
-              <div class="media-body">
-                <h5 id="app" class="mt-0">{{episode.title}}</h5>
+                <h5>{{episode.title}}</h5>
                 <p id="app">Episodio {{episode.episode}}</p>
-              </div>
-            </div>
           </li>
         </ul>
       </section>

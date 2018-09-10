@@ -4,13 +4,13 @@ STYLE GUIDE
 2. Series
 3.
 */
- #app {
+ #app,h1,h2,h3,h4,h5,h6 {
    font-family: "Avenir", Helvetica, Arial, sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+   text-shadow: rgb(85, 85, 85) 0px 0px 0px;
    text-align: center;
-   color: #000000;
+   color: #3f3e3e;
    font-size: 90%;
  }
 
@@ -138,6 +138,7 @@ STYLE GUIDE
  header .logo {
    color: #ffffff;
    font-size: 30px;
+   
  }
 
  header .logo img {
@@ -160,7 +161,7 @@ STYLE GUIDE
  }
 
  header nav a {
-   background: #455a64;
+   background: #4285f4;
    color: #ffffff;
    text-align: center;
    text-decoration: none;
@@ -170,11 +171,11 @@ STYLE GUIDE
  }
 
  header nav a:hover {
-   background: #78909c;
+   background: #8db2e9;
  }
 
  footer {
-   background: #263238;
+   background: #4285f4;
    width: 100%;
    padding: 20px;
    /* Flexbox */
@@ -184,7 +185,7 @@ STYLE GUIDE
  }
 
  footer .links {
-   background: #455a64;
+   background: #518adf;
    display: flex;
    flex-wrap: wrap;
  }
@@ -198,11 +199,11 @@ STYLE GUIDE
  }
 
  footer .links a:hover {
-   background: #78909c;
+   background: #8db2e9;
  }
 
  footer .social {
-   background: #455a64;
+   background: #347c9e;
  }
 
  footer .social a {

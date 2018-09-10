@@ -2,7 +2,7 @@
   <div class="elemento">
     <div class="caps" *ngFor="let home of homes">
       <img (click)="onShowEpisode(home.parentID,home.id)" class="rounded" src="{{home.imageCap}}" alt="Italian Trulli">
-      <h6 class="font" id="app"> {{home.title | slice : 0: 25}}...</h6>
+      <h6> {{home.title | slice : 0: 25}}...</h6>
     </div>
   </div>
 </div>
