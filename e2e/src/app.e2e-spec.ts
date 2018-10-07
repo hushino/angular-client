@@ -9,6 +9,10 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+<<<<<<< HEAD
     expect(page.getParagraphText()).toEqual('Welcome to client!');
+=======
+    expect(page.getParagraphText()).toEqual('Welcome to angular-client!');
+>>>>>>> initial commit
   });
 });
